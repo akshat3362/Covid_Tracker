@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:background="#003366"
+    >
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:popupBackground="#003366"
+        android:layout_marginLeft="20dp"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        app:lottie_rawRes="@raw/corona3"
+        app:lottie_autoPlay="true"
+        android:layout_marginTop="120dp"
+        app:lottie_loop="true"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/image"
+        />
+
+
+    <com.razerdp.widget.animatedpieview.AnimatedPieView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/pie"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="30dp"
+        />
+</RelativeLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="500dp"
+       android:background="@drawable/background"
+       android:layout_marginTop="205dp"
+       >
+       <androidx.cardview.widget.CardView
+           android:layout_width="137dp"
+           android:layout_height="117dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="30dp"
+           >
+
+           <ImageView
+               android:layout_width="50dp"
+               android:layout_height="56dp"
+               android:layout_marginLeft="50dp"
+               android:layout_marginTop="10dp"
+               android:src="@drawable/coronacard1" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Total Cases:"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:id="@+id/deaths"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="60dp"
+               tools:ignore="MissingConstraints" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="3000"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:layout_marginLeft="10dp"
+               android:textSize="20dp"
+               android:id="@+id/deathscount"
+               android:layout_marginTop="85dp"
+               tools:ignore="MissingConstraints" />
+       </androidx.cardview.widget.CardView>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="158dp"
+           android:layout_height="130dp"
+           android:layout_marginTop="0dp"
+           android:layout_marginLeft="20dp"
+           android:background="@drawable/cardborder">
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+       <androidx.cardview.widget.CardView
+           android:layout_width="137dp"
+           android:layout_height="117dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginLeft="200dp"
+           >    <ImageView
+           android:layout_width="100dp"
+           android:layout_height="50dp"
+           android:src="@drawable/coronacard3"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="20dp"
+           />
+
+
+           <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Total Deaths:"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:textSize="20dp"
+           android:id="@+id/confirmed"
+           android:layout_marginLeft="10dp"
+           android:layout_marginTop="60dp"
+           tools:ignore="MissingConstraints" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="30000"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:layout_marginLeft="10dp"
+           android:textSize="20dp"
+           android:id="@+id/confirmedcount"
+           android:layout_marginTop="85dp"
+           tools:ignore="MissingConstraints" />
+       </androidx.cardview.widget.CardView>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="158dp"
+           android:layout_height="130dp"
+           android:layout_marginTop="0dp"
+           android:layout_marginLeft="190dp"
+           android:background="@drawable/cardborder">
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+       <androidx.cardview.widget.CardView
+           android:layout_width="137dp"
+           android:layout_height="117dp"
+           android:layout_marginTop="150dp"
+           android:layout_marginLeft="30dp"
+           >
+           <ImageView
+               android:layout_width="80dp"
+               android:layout_height="40dp"
+               android:src="@drawable/th"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="30dp"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Today Cases:"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:id="@+id/todaycases"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="60dp"
+               tools:ignore="MissingConstraints" />
+
+           <TextView
+               android:id="@+id/todaycasescount"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="85dp"
+               android:text="20000"
+               android:textColor="@color/black"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               tools:ignore="MissingConstraints" />
+       </androidx.cardview.widget.CardView>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="158dp"
+           android:layout_height="140dp"
+           android:layout_marginTop="140dp"
+           android:layout_marginLeft="20dp"
+           android:background="@drawable/cardborder">
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+       <androidx.cardview.widget.CardView
+           android:layout_width="137dp"
+           android:layout_height="117dp"
+           android:layout_marginTop="150dp"
+           android:layout_marginLeft="200dp"
+           >
+           <ImageView
+               android:layout_width="100dp"
+               android:layout_height="40dp"
+               android:src="@drawable/coronavirus_5028574_1920_1080x675"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="20dp"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Today Death:"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="20dp"
+               android:id="@+id/todaydeath"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="60dp"
+               tools:ignore="MissingConstraints" />
+
+           <TextView
+               android:id="@+id/todaydeathcount"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="85dp"
+               android:text="20000"
+               android:textColor="@color/black"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               tools:ignore="MissingConstraints" />
+       </androidx.cardview.widget.CardView>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="158dp"
+           android:layout_height="140dp"
+           android:layout_marginTop="140dp"
+           android:layout_marginLeft="190dp"
+           android:background="@drawable/cardborder">
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+       <androidx.cardview.widget.CardView
+           android:layout_width="137dp"
+           android:layout_height="117dp"
+           android:layout_marginTop="300dp"
+           android:layout_marginLeft="100dp"
+           >
+           <ImageView
+               android:layout_width="100dp"
+               android:layout_height="40dp"
+               android:src="@drawable/th__1_"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="20dp"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Total Recovered:"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="19dp"
+               android:id="@+id/recovered"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="48dp"
+               tools:ignore="MissingConstraints" />
+
+           <TextView
+               android:id="@+id/recoveredcount"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="95dp"
+               android:text="20000"
+               android:textColor="@color/black"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               tools:ignore="MissingConstraints" />
+       </androidx.cardview.widget.CardView>
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="158dp"
+           android:layout_height="140dp"
+           android:layout_marginTop="290dp"
+           android:layout_marginLeft="90dp"
+           android:background="@drawable/cardborder">
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </RelativeLayout>
+
+
+</RelativeLayout>
